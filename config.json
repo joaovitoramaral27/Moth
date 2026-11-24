@@ -1,0 +1,42 @@
+{
+    "app": {
+        "name": "Moth",
+        "version": "0.1.0",
+        "language": "pt-BR",
+        "debug": true
+    },
+    "paths": {
+        "corpus": "data/corpus",
+        "processed": "data/processed",
+        "checkpoints": "models/checkpoints",
+        "tokenizer": "models/tokenizer",
+        "voice": "models/voice"
+    },
+    "model": {
+        "architecture": "transformer",
+        "vocab_size": 8000,
+        "embedding_dim": 256,
+        "num_layers": 4,
+        "num_heads": 4,
+        "max_seq_length": 512,
+        "dropout": 0.1
+    },
+    "training": {
+        "batch_size": 16,
+        "learning_rate": 0.0003,
+        "epochs": 10
+    },
+    "memory": {
+        "short_term_limit": 10,
+        "long_term_enabled": true
+    },
+    "voice": {
+        "enabled": false,
+        "wake_word": "Moth"
+    },
+    "actions": {
+        "apps_enabled": true,
+        "files_enabled": true,
+        "reminders_enabled": true
+    }
+}
